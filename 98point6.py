@@ -75,7 +75,7 @@ Y = winper['win%']
 fig, ax = plt.subplots(figsize=(12, 6))
 ax.bar(X,Y,align='center',alpha=0.5)
 ax.set_xticks(X)
-ax.set_xticklabels(X_ticks_labels,rotation='vertical',fontsize=12)
+ax.set_xticklabels(X_ticks_labels,rotation='horizontal',fontsize=12)
 for p in ax.patches:
     ax.annotate(str(p.get_height()), (p.get_x() * 1.005, p.get_height() * 1.005))
 plt.title("Win percentage by country")
